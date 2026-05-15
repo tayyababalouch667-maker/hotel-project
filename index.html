@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Royal Hotel</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#222;
+            padding:15px;
+        }
+
+        nav{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-size:18px;
+            transition:0.4s;
+        }
+
+        nav a:hover{
+            color:orange;
+            transform:scale(1.1);
+        }
+
+        .hero{
+            height:90vh;
+            background:linear-gradient(rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)),
+            url('https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200');
+
+            background-size:cover;
+            background-position:center;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+
+            color:white;
+        }
+
+        .hero h1{
+            font-size:60px;
+            animation:slide 2s;
+        }
+
+        .hero p{
+            font-size:22px;
+            margin-top:10px;
+        }
+
+        .btn{
+            margin-top:20px;
+            background:orange;
+            color:white;
+            padding:12px 25px;
+            text-decoration:none;
+            border-radius:5px;
+            transition:0.4s;
+        }
+
+        .btn:hover{
+            transform:translateY(-5px);
+            background:black;
+        }
+
+        @keyframes slide{
+
+            from{
+                transform:translateY(-100px);
+                opacity:0;
+            }
+
+            to{
+                transform:translateY(0);
+                opacity:1;
+            }
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <h1>Royal Hotel</h1>
+
+    <p>Luxury Rooms For Comfortable Stay</p>
+
+    <a href="rooms.html" class="btn">
+        Book Now
+    </a>
+
+</section>
+
+<footer>
+
+    <p>Royal Hotel Website</p>
+
+</footer>
+
+</body>
+</html>

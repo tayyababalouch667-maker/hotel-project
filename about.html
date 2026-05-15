@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>About Royal Hotel</title>
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial;
+        }
+
+        body{
+
+            background:
+            linear-gradient(rgba(0,0,0,0.7),
+            rgba(0,0,0,0.7)),
+
+            url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=1400');
+
+            background-size:cover;
+            background-position:center;
+            background-attachment:fixed;
+
+            color:white;
+        }
+
+        /* Navbar */
+
+        header{
+            background:rgba(0,0,0,0.7);
+            padding:18px;
+
+            position:sticky;
+            top:0;
+
+            backdrop-filter:blur(5px);
+        }
+
+        nav{
+            display:flex;
+            justify-content:center;
+            gap:25px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-size:18px;
+
+            transition:0.4s;
+        }
+
+        nav a:hover{
+            color:orange;
+            transform:scale(1.1);
+        }
+
+        /* About Section */
+
+        .container{
+
+            width:80%;
+
+            margin:80px auto;
+
+            padding:50px;
+
+            text-align:center;
+
+            background:rgba(255,255,255,0.1);
+
+            border-radius:20px;
+
+            backdrop-filter:blur(8px);
+
+            box-shadow:0 0 20px rgba(0,0,0,0.5);
+
+            animation:fade 2s;
+        }
+
+        .container h1{
+
+            font-size:50px;
+
+            margin-bottom:25px;
+
+            color:orange;
+
+            text-shadow:2px 2px 10px black;
+        }
+
+        .container p{
+
+            font-size:23px;
+
+            line-height:1.9;
+        }
+
+        /* Animation */
+
+        @keyframes fade{
+
+            from{
+                opacity:0;
+                transform:translateY(50px);
+            }
+
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        /* Extra Boxes */
+
+        .features{
+
+            display:flex;
+
+            justify-content:center;
+
+            gap:25px;
+
+            flex-wrap:wrap;
+
+            margin-top:40px;
+        }
+
+        .box{
+
+            width:250px;
+
+            background:rgba(255,255,255,0.1);
+
+            padding:25px;
+
+            border-radius:15px;
+
+            transition:0.5s;
+        }
+
+        .box:hover{
+            transform:translateY(-10px);
+            background:rgba(255,165,0,0.2);
+        }
+
+        .box h3{
+            margin-bottom:15px;
+            color:orange;
+        }
+
+        /* Footer */
+
+        footer{
+
+            background:rgba(0,0,0,0.7);
+
+            color:white;
+
+            text-align:center;
+
+            padding:18px;
+
+            margin-top:50px;
+        }
+
+        /* Responsive */
+
+        @media(max-width:768px){
+
+            nav{
+                flex-direction:column;
+                align-items:center;
+            }
+
+            .container{
+                width:90%;
+                padding:30px;
+            }
+
+            .container h1{
+                font-size:35px;
+            }
+
+            .container p{
+                font-size:18px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+<div class="container">
+
+    <h1>About Royal Hotel</h1>
+
+    <p>
+
+        Royal Hotel provides luxury rooms,
+        excellent services and comfortable
+        environment for customers.
+
+        Our mission is to provide the best
+        experience with modern facilities
+        and beautiful rooms.
+
+    </p>
+
+    <!-- Feature Boxes -->
+
+    <div class="features">
+
+        <div class="box">
+
+            <h3>Luxury Rooms</h3>
+
+            <p>
+                Beautiful and modern luxury rooms
+                for comfortable stay.
+            </p>
+
+        </div>
+
+        <div class="box">
+
+            <h3>Free WiFi</h3>
+
+            <p>
+                High speed internet available
+                in all hotel rooms.
+            </p>
+
+        </div>
+
+        <div class="box">
+
+            <h3>24/7 Service</h3>
+
+            <p>
+                Customer support and room service
+                available all the time.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+
+    <p>
+        Designed By Royal Hotel
+    </p>
+
+</footer>
+
+</body>
+</html>
